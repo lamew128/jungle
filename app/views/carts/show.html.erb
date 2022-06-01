@@ -6,6 +6,7 @@
 
   <% if enhanced_cart.length == 0 %>
     <h1>Empty</h1>
+    <%= link_to '<button type="button">Home page</button>'.html_safe, '/' %>
   <% else %>
 
     <div class="panel panel-default items">
@@ -45,7 +46,7 @@
             data-amount="<%= cart_subtotal_cents %>"
             data-name="Jungle"
             data-description="Khurram Virani's Jungle Order"
-              data-locale="auto"
+            data-locale="auto"
             data-email="kvirani@gmail.com"
             data-currency="cad">
           </script>
